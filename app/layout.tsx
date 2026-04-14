@@ -1,11 +1,6 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title:
@@ -26,8 +21,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+    <html lang="en">
+      <head>
+        <Script
+          src="https://use.typekit.net/uxs7dvz.js"
+          strategy="beforeInteractive"
+        />
+        <Script id="typekit-load" strategy="beforeInteractive">
+          {`try{Typekit.load();}catch(e){}`}
+        </Script>
+      </head>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
