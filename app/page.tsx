@@ -65,7 +65,7 @@ export default function Home() {
 
       {/* ABOUT ME / INTRO */}
       <section className="bg-transparent">
-        <div className="bg-light-gray flex flex-col items-center w-full py-16 px-[140px] gap-6 max-md:px-10 max-sm:px-4 max-sm:py-10">
+        <div className="bg-light-gray flex flex-col items-center w-full py-16 px-16 gap-6 max-md:px-10 max-sm:px-4 max-sm:py-10">
           <h2 className="font-gin text-[28px] font-normal leading-[120%] tracking-[0.2em] text-forest text-center uppercase">
             About me
           </h2>
@@ -110,7 +110,7 @@ export default function Home() {
       {/* PLAYER PROFILE */}
       <section
         id="Player-Profile"
-        className="bg-white flex flex-col items-center w-full pt-16 pb-10 px-[140px] gap-10 max-md:px-10 max-sm:px-4"
+        className="bg-white flex flex-col items-center w-full pt-16 pb-10 px-16 gap-10 max-md:px-10 max-sm:px-4"
       >
         <h2 className="font-gin text-[28px] font-normal leading-[120%] tracking-[0.2em] text-forest text-center uppercase">
           player profile
@@ -318,13 +318,13 @@ export default function Home() {
       {/* HIGHLIGHTS */}
       <section
         id="Highlights"
-        className="bg-background flex flex-col items-center w-full py-16 px-[140px] gap-6 max-md:px-10 max-sm:px-4"
+        className="bg-background flex flex-col items-center w-full py-16 gap-6"
       >
-        <h2 className="font-gin text-[28px] font-normal leading-[120%] tracking-[0.2em] text-white text-center uppercase">
+        <h2 className="font-gin text-[28px] font-normal leading-[120%] tracking-[0.2em] text-white text-center uppercase px-4">
           2024-25 Club Highlights
         </h2>
-        <div className="flex flex-col md:flex-row gap-0 w-full max-w-[1440px]">
-          <div className="w-full aspect-video">
+        <div className="flex flex-col md:flex-row w-full">
+          <div className="w-full md:w-1/2 aspect-video">
             <iframe
               src="https://www.youtube.com/embed/Rog-5ewQNvk?rel=0&controls=1&autoplay=0&mute=1"
               title="Colton Martin | Class of 2028 | 2024-25 U16 NAL & State Cup Highlights"
@@ -333,7 +333,7 @@ export default function Home() {
               className="w-full h-full"
             />
           </div>
-          <div className="w-full aspect-video">
+          <div className="w-full md:w-1/2 aspect-video">
             <iframe
               src="https://www.youtube.com/embed/UcZgzoktPHo?rel=0&controls=1&autoplay=0&mute=1"
               title="Nov. 2025 - MLS NEXT AD U17 vs. One Knox"
