@@ -323,9 +323,26 @@ export default function Home() {
         <h2 className="font-gin text-[28px] font-normal leading-[120%] tracking-[0.2em] text-white text-center uppercase">
           2024-25 Club Highlights
         </h2>
-        <p className="font-proxima text-[16px] text-muted italic">
-          Coming soon.
-        </p>
+        <div className="flex flex-col md:flex-row gap-0 w-full max-w-[1440px]">
+          <div className="w-full aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/Rog-5ewQNvk?rel=0&controls=1&autoplay=0&mute=1"
+              title="Colton Martin | Class of 2028 | 2024-25 U16 NAL & State Cup Highlights"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+          <div className="w-full aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/UcZgzoktPHo?rel=0&controls=1&autoplay=0&mute=1"
+              title="Nov. 2025 - MLS NEXT AD U17 vs. One Knox"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            />
+          </div>
+        </div>
       </section>
 
       {/* FOOTER / CONTACT */}
